@@ -9,3 +9,10 @@ function realestate_scripts() {
     wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.min.js', array(), '1.0.0', true );
 	
 }
+
+add_theme_support( 'custom-logo', [
+	'height'      => 50,
+	'width'       => 160,
+	'flex-width'  => false,
+	'unlink-homepage-logo' => false, // WP 5.5
+] );
